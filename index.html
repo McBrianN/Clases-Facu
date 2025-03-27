@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="inicio">
+        <h1 align="center">BICIALQUILERES</h1>
+        <hr>
+
+        <nav>
+            <h2>Menú</h2>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#que-es-esto">Que es esto?</a></li>
+                <li><a href="#registro">Registro de Estaciones</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <hr>
+        </nav>
+     </header>
+
+    <!-- seccion explicativa de lo que habra en la pagina. -->
+    <section id="que-es-esto">
+        <h2>¿Que es esto?</h2>
+        <p>Una aplicación web que permite gestionar el sistema de alquiler de bicicletas en la ciudad. Las bicicletas se toman y devuelven en diferentes estaciones, que están registradas en el sistema.</p>
+        <p>Cada estación tiene una serie de datos asociados:</p>
+        <ul>
+            <li>Nombre de la estación</li>
+            <li>Dirección</li>
+            <li>Barrio</li>
+            <li>Latitud y longitud</li>
+            <li>Si está activa o no</li>
+        </ul>
+        <hr>
+    </section>
+
+    <main>
+
+        <!-- Formulario -->
+        <section id="registro">
+            <h2>Formulario</h2>
+            <form>
+                <label for="buscar">Buscar:</label>
+                <input type="text" id="buscar" name="buscar" placeholder="Nombre/Direccion de Estacion">
+                
+                <label for="barrio">Barrio:</label>
+                <select name="barrio" id="barrio">
+                    <option value="centro">Centro</option>
+                    <option value="palermo">Palermo</option>
+                    <option value="recoleta">Recoleta</option>
+                    <option value="belgrano">Belgrano</option>
+                </select>
+                
+                <label for="checkbox">Ver estaciones Inactivas</label>
+                <input type="checkbox" name="checkbox" id="checkbox">
+
+                <button type="submit">Enviar</button>
+
+            </form>
+        </section>
+
+        <!-- Tabla -->
+        <section id="tabla">
+            <br>
+            <table width="100%" border="1px">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Dirección</th>
+                        <th>Barrio</th>
+                        <th>Latitud</th>
+                        <th>Longitud</th>
+                        <th>Activa</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Estación 1</td>
+                        <td>Av. Siempre Viva 123</td>
+                        <td>Centro</td>
+                        <td>-34.603722</td>
+                        <td>-58.381592</td>
+                        <td>Si</td>
+                    </tr>
+                    <tr>
+                        <td>Estación 2</td>
+                        <td>Av. Siempre Viva 456</td>
+                        <td>Palermo</td>
+                        <td>-34.588611</td>
+                        <td>-58.430000</td>
+                        <td>Si</td>
+                    </tr>
+                    <tr>
+                        <td>Estación 3</td>
+                        <td>Av. Siempre Viva 789</td>
+                        <td>Recoleta</td>
+                        <td>-34.587500</td>
+                        <td>-58.397500</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>Estación 4</td>
+                        <td>Av. Siempre Viva 1011</td>
+                        <td>Belgrano</td>
+                        <td>-34.562778</td>
+                        <td>-58.456111</td>
+                        <td>Si</td>
+                </tbody>
+
+            </table>
+            <br>
+        </section>
+    </main>
+    <footer>
+
+    
+        <!-- opinion -->
+        <section id="opinion">
+            <hr>
+            <h2>Opinión</h2>
+            <p>¿Qué te pareció la página?</p>
+            <form>
+                <label for="opinion">Opinión:</label><br>
+                <textarea name="opinion" id="opinion" cols="30" rows="5" placeholder="Rellene con su opinion"></textarea><br>
+                <button type="submit">Enviar</button>
+            </form>
+
+        </section>
+        
+        <hr>
+        <!-- contacto -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Para más información, comunicarse a:</p>
+            <ul>
+                <li>Correo: <a href="mailto:brianluismussin@gmail.com">brianluismussin@gmail.com</a></li>
+                <li>Telefono: +54 3482502080</li>
+                <li>Instagram: <a href="https://www.instagram.com/brian_mussin/">@brian_mussin</a></li>
+            </ul>
+        </section>
+
+        <hr>
+        <p>&copy;<b>2024 Las tetas chiquitas son las mejores</b> </p>
+    </footer>
+
+    </main>
+
+</body>
+</html>
